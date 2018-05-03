@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#pagination .pager {
+  display: inline-block;
+  font-weight: 700;
+}
+#pagination .pager-inactive {
+  color: #666666;
+}
