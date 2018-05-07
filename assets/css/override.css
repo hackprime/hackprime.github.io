@@ -6,10 +6,27 @@ a:hover {
   text-decoration: underline;
 }
 
+.title > a   {
+  color: #b5e853;
+}
+
 #pagination .pager {
   display: inline-block;
   font-weight: 700;
 }
 #pagination .pager-inactive {
   color: #666666;
+}
+
+.post_tag {
+    margin-right: 10px;
+}
+.post_tag:last-child {
+    margin-right: 0;
+}
+
+.tag_cloud {
+    white-space: nowrap;
+    font-size: 1em;
+    padding: 0 1em 1em 0;
 }

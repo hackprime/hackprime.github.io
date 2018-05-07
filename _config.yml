@@ -45,5 +45,5 @@ exclude:
 #   - vendor/ruby/
 
 github: [metadata]
-show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
+
