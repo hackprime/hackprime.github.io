@@ -10,6 +10,7 @@ categories:
 tags:
   - debian
   - ubuntu
+comments: true
 ---
 
 Чтобы посмотреть текущее время в данный момент &#8212; просто используем **date**.

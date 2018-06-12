@@ -10,8 +10,29 @@ layout: default
 {{ content }}
 
 {% if page.tags %}
-  <h4>Tags</h4>
-  {% for tag in page.tags %}
-    <a class="post_tag" href="/tags/{{ tag }}">[{{ tag }}]</a>
-  {% endfor %}
+  <div class="post_tags">
+    <h3>Tags</h3>
+    {% for tag in page.tags %}
+      <a class="post_tag" href="/tags/{{ tag }}">[{{ tag }}]</a>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if page.comments %}
+  <div id="disqus_thread"></div>
+
+  <script>
+    var disqus_config = function () {
+      var url = location.protocol + '//' + location.hostname;
+      this.page.url = url + '{{ page.url }}';
+      this.page.identifier = '{{ page.guid }}';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = '//hackprime.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      d.getElementById('disqus_thread').appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}
